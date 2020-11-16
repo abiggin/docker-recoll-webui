@@ -13,7 +13,9 @@ recoll with webui in a docker container
 
 - example usage...
 
-'docker run -d -p 8080:8080 -it --mount source=recoll_xapiandb,target=/home/recoll/.recoll/xapiandb --mount type=bind,source="/mnt/data1",target=/data recoll'
+`docker run -d -p 8080:8080 -it --mount source=recoll_xapiandb,target=/home/recoll/.recoll/xapiandb --mount type=bind,source="/mnt/data1",target=/data recoll`
+
+- DockerHub [link](https://hub.docker.com/repository/docker/newbee75/recoll)
 
 # installation steps
 

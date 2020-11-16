@@ -9,7 +9,11 @@ recoll with webui in a docker container
 
 - the db will be stored in the user "recoll" home dir.  Pass in the home dir root as...
 
-`--mount type=bind,source="<<{$HOME} for user you are running as>>",target=/home`
+`--mount source=recoll_xapiandb,target=/home/recoll/.recoll/xapiandb`
+
+- example usage...
+
+'docker run -d -p 8080:8080 -it --mount source=recoll_xapiandb,target=/home/recoll/.recoll/xapiandb --mount type=bind,source="/mnt/data1",target=/data recoll'
 
 # installation steps
 

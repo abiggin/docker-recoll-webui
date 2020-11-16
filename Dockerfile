@@ -25,7 +25,6 @@ RUN apt-get install -y --no-install-recommends  aspell
 RUN apt-get update
 RUN apt-get clean
 
-
 # recoll config file
 RUN mkdir /root/recoll
 COPY recoll.conf /root/.recoll/recoll.conf

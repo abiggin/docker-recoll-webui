@@ -17,5 +17,3 @@ recoll with webui in a docker container
 
 - DockerHub [link](https://hub.docker.com/repository/docker/newbee75/recoll)
 
-# installation steps
-
